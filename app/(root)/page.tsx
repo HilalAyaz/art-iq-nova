@@ -1,7 +1,6 @@
 import { Collection } from "@/components/shared/Collection";
 import { navLinks } from "@/constants";
 import { getAllImages } from "@/lib/actions/image.actions";
-import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +12,7 @@ const Home = async ({ searchParams }: SearchParamProps) => {
   return (
     <>
       <section className="home">
-        <h1 className="home-heading">Unleash the Creativity of AI with <br/> <span className="h1-headinglogotitle bg-gradient-to-r from-indigo-200 via-yellow-300 to-indigo-200 inline-block text-transparent bg-clip-text "> ArtIQnova</span> </h1>
+        <h1 className="home-heading">Unleash the Creativity of AI with <br/> <span className="h1-headinglogotitle bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-600 inline-block text-transparent bg-clip-text "> ArtIQnova</span> </h1>
         <ul className="flex-center w-full gap-20 ">
           {navLinks.slice(1, 5).map((link) => (
             <Link
